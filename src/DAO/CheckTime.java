@@ -5,8 +5,6 @@
  */
 package DAO;
 
-import java.util.Scanner;
-
 /**
  *
  * @author PC
@@ -55,22 +53,6 @@ public class CheckTime {
     }
 
     public static void main(String[] args) {
-	int day, month, year;
-	CheckTime dao=new CheckTime();
-	Scanner sc = new Scanner(System.in);
-	try {
-	    System.out.println("Please enter day: ");
-	    day = sc.nextInt();
-	    System.out.println("Please Enter month: ");
-	    month=sc.nextInt();
-	    System.out.println("Please Enter Year: ");
-	    year=sc.nextInt();
-	    if(dao.isValidDate(day, month, year)){
-		System.out.println("Valid Date!");
-	    }else{
-		System.out.println("InValid Day!!");
-	    }
-	} catch (NumberFormatException e) {
-	}	
+		
     }
 }
